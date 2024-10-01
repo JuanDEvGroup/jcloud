@@ -1,0 +1,200 @@
+/* Custom CSS for Froala Editor */
+
+/* General Styles */
+
+.fr-view {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fr-toolbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.fr-toolbar .fr-command {
+  color: #333;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.fr-toolbar .fr-command:hover {
+  color: #337ab7;
+}
+
+.fr-toolbar .fr-command.fr-active {
+  color: #337ab7;
+}
+
+.fr-toolbar .fr-separator {
+  margin: 0 10px;
+  border-left: 1px solid #ddd;
+  height: 20px;
+}
+
+/* Text Styles */
+
+.fr-view p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.fr-view h1, .fr-view h2, .fr-view h3, .fr-view h4, .fr-view h5, .fr-view h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fr-view h1 {
+  font-size: 36px;
+}
+
+.fr-view h2 {
+  font-size: 30px;
+}
+
+.fr-view h3 {
+  font-size: 24px;
+}
+
+.fr-view h4 {
+  font-size: 18px;
+}
+
+.fr-view h5 {
+  font-size: 14px;
+}
+
+.fr-view h6 {
+  font-size: 12px;
+}
+
+.fr-view strong {
+  font-weight: bold;
+}
+
+.fr-view em {
+  font-style: italic;
+}
+
+.fr-view u {
+  text-decoration: underline;
+}
+
+.fr-view s {
+  text-decoration: line-through;
+}
+
+/* Link Styles */
+
+.fr-view a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.fr-view a:hover {
+  color: #23527c;
+}
+
+/* Image Styles */
+
+.fr-view img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.fr-view img.fr-dragging {
+  opacity: 0.5;
+}
+
+/* Table Styles */
+
+.fr-view table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.fr-view table th, .fr-view table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.fr-view table th {
+  background-color: #f0f0f0;
+}
+
+/* List Styles */
+
+.fr-view ul, .fr-view ol {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fr-view ul li, .fr-view ol li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.fr-view ul li:last-child, .fr-view ol li:last-child {
+  border-bottom: none;
+}
+
+/* Code Styles */
+
+.fr-view code {
+  font-family: monospace;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.fr-view pre {
+  font-family: monospace;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Other Styles */
+
+.fr-view blockquote {
+  font-size: 16px;
+  font-style: italic;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #ddd;
+}
+
+.fr-view hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.fr-view .fr-placeholder {
+  color: #999;
+  font-size: 16px;
+  font-style: italic;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}

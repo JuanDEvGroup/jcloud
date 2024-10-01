@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>J Cloud - Registro</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  body {
+    background: linear-gradient(135deg, #87CEEB, #E0F6FF);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    width: 100%;
+  }
+  .cloud {
+    position: fixed;
+    background: white;
+    border-radius: 50%;
+    animation: float 15s infinite ease-in-out;
+  }
+  .cloud:before, .cloud:after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  .cloud1 { width: 100px; height: 40px; top: 10%; left: 10%; }
+  .cloud1:before { width: 50px; height: 50px; top: -25px; left: 5px; }
+  .cloud1:after { width: 70px; height: 70px; top: -35px; right: 15px; }
+  .cloud2 { width: 120px; height: 48px; top: 50%; right: 10%; }
+  .cloud2:before { width: 60px; height: 60px; top: -30px; left: 10px; }
+  .cloud2:after { width: 80px; height: 80px; top: -40px; right: 20px; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+  }
+  .btn-primary:hover {
+    background-color: #357ae8;
+    border-color: #357ae8;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+</style>
+</head>
+<body>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="login-container">
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4a90e2">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"/>
+    </svg>
+  </div>
+  <h2 class="text-center mb-4">J Cloud Registrarme</h2>
+  
+    
+    <form action="registrar.php" method="post" id="loginForm">
+    <div class="mb-3">
+      <label for="username" class="form-label">Nombre de Usuario</label>
+      <input type="text" class="form-control" id="username" name="correo" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" name="palabra_secreta" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Cofirmar Contraseña</label>
+        <input type="password" class="form-control" id="password" name="palabra_secreta_confirmar" required>
+      </div>
+
+    <input type="submit" value="Registrarme" class="btn btn-primary w-100">
+  </form>
+  <div class="text-center mt-3">
+    <a href="index.html">Ya tengo una cuenta</a>
+  </div>
+</div>
+</body>
+</html>
+
